@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+nav {
+    width: 200px;
+    background-color: #2c3e50;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    overflow-y: auto;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.nav li {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.nav li img {
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+.nav a:hover {
+    color: #50aade;
+    font-style:bold;
+}
+
+.main{
+    margin-left: 220px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(11, 10, 10, 0.1);
+}
+.home h4{
+    font-style: italic;
+    margin-top: 3px;
+    margin-left: 50px;
+
+}
+.home img{
+    width: 13%;
+    height: 13%;
+    height: 30%;
+    border-radius:5px;
+    margin-left:420px;
+    
+}
+section h2 {
+    text-align: left;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #298cce;
+    padding-bottom: 5px;
+    
+}
+
+.about {
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    text-align: left;
+    margin-bottom: 20px;
+    border-left: 2px solid #2980b9;
+}
+
+.skills{
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 2px solid #2980b9;
+
+}
+.skills ul {
+    display: grid;  
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 7px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skills li:hover {
+    background-color: #2980b9;
+}
+
+.education ul {
+    list-style: none;
+ 
+}
+
+.education li {
+    background-color: #ecf0f1;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid #3498db;
+    border-radius: 5px;
+    line-height: 1.8;
+}
+.projects ul{
+    list-style: none;
+}
+.projects li{
+    background-color: #ecf0f1;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 2px solid #3498db;
+    border-radius: 5px;
+    line-height: 1.8;
+} 
+.hobbies ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    justify-content: space-around;
+}
+
+.hobbies li {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    width: 150px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-left:2px solid rgb(11, 1, 1);
+}
+
+.hobbies li:hover {
+    background-color: #4c6075;
+}
+
+.contact p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.contact a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover{
+    color:#5a9fe3;
+}
+
+.contact  i{
+    margin-right: 10px;
+}
+.contact i:hover{
+    color: #1e5fa0;
+ }
+table{
+    background-color: rgb(211, 210, 210);
+    border-radius: 10px;
+    margin:2px;
+    margin-bottom:15px;
+    margin-top:10px;
+    width:90%;
+    padding: 20px;
+ }
+ td{
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    vertical-align: middle;
+ }
+input[type="text"],input[type="email"]{
+    width: 100%;
+    padding: 7px;
+    margin: 10px;
+    border: 2px solid #8a8686;
+    border-radius: 5px;
+}
+button{
+    background-color: #2c3e50;
+    color: white;  
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+button:hover{
+    background-color: #1e5fa0;
+}
+textarea{
+    width: 100%;
+    padding: 7px;
+    margin: 10px 10px;
+    border: 2px solid #8a8686;
+    border-radius: 5px;
+    resize:none;
+}
+
+footer {
+    margin-top: 0px;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #2c3e50;
+    color: white;
+    font-size: 14px;
+}

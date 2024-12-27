@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .calculator {
+            width: 290px;
+            margin:auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: #f9f9f9;
+            /* text-align: center; */
+            background-color: rgb(43, 158, 197);
+        }
+        input[type="text"]{
+                border: 1px solid #0e0707;
+                margin:10px;
+                padding: 10px;
+                width: 250px;
+                height: 25px;
+                border-radius: 7px;
+                text-align: right;
+                font-size:larger;
+                font-weight: bold;
+            }
+        button{
+            padding:5px;
+            margin: 2px;
+            border: 1px solid #0e0707;
+            border-radius: 8px;
+            background-color: #9ccaf1;
+            width: 17%;
+            height: 50px;
+            cursor: pointer;
+            font-size:20px;
+            }
+        h2{
+            text-align: center;
+            font-size:35px;
+            color:rgb(96, 56, 8);
+            }
+        button:hover{
+            background-color: #0e0707;
+            color: #f9f9f9;
+            font-weight: bold;
+            border: 1px solid #0e0707;
+            }
+        </style>
+</head>
+<body>
+    <h2><strong>CALCULATOR</strong></h2>
+    <div class="calculator">
+        <input type="text" id="result" readonly>
+        <br><br>
+        <button onclick="clearDisplay()">C</button> <br><br>      
+        <button onclick="pressnumber('7')">7</button>
+        <button onclick="pressnumber('8')">8</button>
+        <button onclick="pressnumber('9')">9</button>
+        <button onclick="performOperation('+')">+</button>
+        <button onclick="performOperation('/')">/</button> 
+        <br><br>
+        <button onclick="pressnumber('4')">4</button>
+        <button onclick="pressnumber('5')">5</button>
+        <button onclick="pressnumber('6')">6</button>
+        <button onclick="performOperation('-')">-</button>
+        <button onclick="performOperation('*')">*</button>
+        <br><br>
+        <button onclick="pressnumber('0')">0</button>
+        <button onclick="pressnumber('1')">1</button>
+        <button onclick="pressnumber('2')">2</button>
+        <button onclick="pressnumber('3')">3</button>
+        <button class="eq"onclick="performOperation('=')">=</button><br><br>
+    </div>
+    <script>
+        let currentInput = "";
+        let operator="";
+        let firstNumber=null;
+
+        function pressnumber(num){
+            currentInput+=num;
+            updateDisplay(currentInput);
+        }
+        function performOperation(op){
+            if(op=="="){
+                if (firstNumber !== null || currentInput !== "") {
+                    const secondNumber = parseFloat(currentInput);
+                    const result = performCalculation(firstNumber, secondNumber, operator);
+                    updateDisplay(result);
+                    firstNumber = null;
+                    operator = '';
+                    currentInput = '';
+                 }
+                return;
+            }
+            if(currentInput===""){
+                return;
+            }
+            if(firstNumber===null){
+                firstNumber=parseFloat(currentInput);
+            }
+            else{
+                const secondNumber=parseFloat(currentInput);
+                const result=performCalculation(firstNumber,secondNumber,operator);
+                firstNumber=result;
+            }
+            operator=op;
+            currentInput="";
+            updateDisplay(firstNumber+" "+operator);
+        }
+        function clearDisplay() {
+            currentInput = '';
+            operator = '';
+            firstNumber = null;
+            updateDisplay('');
+            }
+            function updateDisplay(value) {
+                document.getElementById('result').value = value;
+            }
+        function performCalculation(firstNumber, secondNumber, operator) {
+            switch (operator) {
+                case '+':
+                    return firstNumber + secondNumber;
+                case '-':
+                    return firstNumber - secondNumber;
+                case '*':
+                    return firstNumber * secondNumber;
+                case '/':
+                    if (secondNumber === 0) {
+                        alert('Error: Division by zero');
+                        return 0;
+                    }
+                    return firstNumber / secondNumber;
+                default:
+                    return secondNumber;
+            }
+        }
+    </script>
+</body>
+</html>

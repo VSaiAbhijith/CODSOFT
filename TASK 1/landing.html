@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Landing Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+        .main {
+            background-color: rgb(253, 250, 246);
+            height: 600px;
+            color: #0d0909;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .main h1 {
+            font-size:60px;
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .main p {
+            font-size:30px;
+            margin-top:10px;
+            margin-bottom:40px;
+        }
+       .main a{
+        background: #e63946;
+            color: #f8f6f6;
+            padding: 20px 30px;
+            border-radius: 10px;
+       }
+        .main a:hover {
+            background: #c90c0c;
+        }
+        .menu {
+            padding: 50px 0;
+            background-color:white;
+        }
+        .menu h2 {
+            text-align: center;
+            font-size:40px;
+            margin-bottom: 30px;
+            color: #0c0304;
+            border-bottom: 2px solid #e63946;
+            display:inline;
+            margin-left:480px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .menu-category {
+            margin-bottom: 30px;
+        }
+        .menu-category h3{
+            font-size: 30px;
+            border-bottom: 2px solid #e63946;
+            display: inline-block;
+            margin-bottom: 15px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .menu-category h4{
+            font-size:20px;
+            color:#0c0304;
+            border-bottom:1.6px solid #e63946;
+            display:inline-block;
+            margin-bottom: 10px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1.5px solid #ddd;
+        }
+        .menu-item p:first-child {
+            font-weight: bold;
+        }
+        .menu-item p:last-child {
+            font-weight: bold;
+            color: #e63946;
+        }
+        .menu-item p{
+            font-size:20px;
+        }
+        .reservation {
+            padding: 50px 0;
+            background: #f1faee;
+        }
+        .reservation h2 {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .reservation-form {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+        }
+        .reservation-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .reservation-form input,
+        .reservation-form button {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .reservation-form textarea{
+            resize:none;
+            width:90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .reservation-form button {
+            background: #e63946;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+        .reservation-form button:hover {
+            background: #d62828;
+        }
+        .contact {
+            padding: 30px 0;
+            text-align: center;
+            background: #343a40;
+            color: #fff;
+        }
+        .contact h2 {
+            font-size: 40px;
+           font-family: 'Courier New', Courier, monospace;
+        }
+        .contact p {
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .contact iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            margin-top: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #212529;
+            color: #fff;
+            font-size:18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Delicious Bites</h1>
+        <p>Delight in every bite, joy in every moment.</p>
+        <a href="#reservation">Reserve Your Table</a>
+    </div>
+    <section class="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-category">
+                <h3>Starters</h3>
+                <div class="menu-item">
+                    <p>Apollo Fish</p>
+                    <p>350</p>
+                </div>
+                <div class="menu-item">
+                    <p>Baby Corn 65</p>
+                    <p>200</p>
+                </div>
+                <div class="menu-item">
+                    <p>Chicken Tikka</p>
+                    <p>220</p>
+                </div>
+                <div class="menu-item">
+                    <p>Chicken 65</p>
+                    <p>250</p>
+                </div>
+                <div class="menu-item">
+                    <p>Egg Chilli</p>
+                    <p>150</p>
+                </div>
+                <div class="menu-item">
+                    <p>Fish Fry</p>
+                    <p>350</p>
+                </div>
+                <div class="menu-item">
+                    <p>Gobi Manchurian</p>
+                    <p>200</p>
+                </div>
+                <div class="menu-item">
+                    <p>Mushroom Pepper Dry</p>
+                    <p>220</p>
+                </div>
+                <div class="menu-item">
+                    <p>Panner Tikka</p>
+                    <p>200</p>
+                </div>
+                <div class="menu-item">
+                    <p>Prawns Ghee Roast</p>
+                    <p>350</p>
+                </div>
+                <div class="menu-item">
+                    <p>Tandoori Chicken </p>
+                    <p>350</p>
+                </div>
+               
+               
+                
+            </div>
+            <div class="menu-category">
+                <h3>Main Course</h3><br>
+                <h4>Chicken</h4>
+                <div class="menu-item">
+                    <p>Butter Chicken </p>
+                    <p>300</p>
+                </div>
+                <div class="menu-item">
+                    <p>Chicken Boneless Biryani</p>
+                    <p>300</p>
+                </div>
+                <div class="menu-item">
+                    <p>Chicken Dum Biryani</p>
+                    <p>280</p>
+                </div>
+                <div class="menu-item">
+                    <p>Chicken Hyderabadi Biryani</p>
+                    <p>300</p>
+                </div>
+                <div class="menu-item">
+                    <p>Chicken Kolhapuri </p>
+                    <p>250</p>
+                </div><br>
+                <h4>Mutton</h4>
+                <div class="menu-item">
+                    <p>Mutton Dum Biryani</p>
+                    <p>350</p>
+                </div>
+                <div class="menu-item">
+                    <p>Mutton Chops Curry</p>
+                    <p>350</p>
+                </div>
+                <div class="menu-item">
+                    <p>Mutton Masala</p>
+                    <p>320</p>
+                </div>
+                <div class="menu-item">
+                    <p>Mutton Keema</p>
+                    <p>360</p>
+                </div>
+                <div class="menu-item">
+                    <p>Special Hyderabadi Mutton Biryani</p>
+                    <p>380</p>
+                </div>
+                <br>
+                <h4>Veg</h4>
+                <div class="menu-item">
+                    <p>Veg Dum Biryani</p>
+                    <p>250</p>
+                </div>
+                <div class="menu-item">
+                    <p>Hyderabadi Veg Dum Biryani</p>
+                    <p>250</p>
+                </div>
+                <div class="menu-item">
+                    <p>Paneer Tikka Biryani</p>
+                    <p>300</p>
+                </div>
+                <div class="menu-item">
+                    <p>Veg Fried Rice</p>
+                    <p>200</p>
+                </div>
+                <div class="menu-item">
+                    <p>Palak Paneer</p>
+                    <p>220</p>
+                </div>
+                <div class="menu-item">
+                    <p>Paneer Butter Masala</p>
+                    <p>260</p>
+                </div>
+
+            </div>
+            <div class="menu-category">
+                <h3>Breads</h3>
+                <div class="menu-item">
+                    <p>Tandoori Roti</p>
+                    <p>40</p>
+                </div>
+                <div class="menu-item">
+                    <p>Butter Naan</p>
+                    <p>50</p>
+                </div>
+                <div class="menu-item">
+                    <p>Paratha</p>
+                    <p>40</p>
+                </div>
+                <div class="menu-item">
+                    <p>Butter Kulcha</p>
+                    <p>50</p>
+                </div>
+                <div class="menu-item">
+                    <p>Garlic Naan</p>
+                    <p>40</p>
+                </div>
+                <div class="menu-item">
+                    <p>Roomali Roti</p>
+                    <p>40</p>
+                </div>
+        </div>
+        <div class="menu-category">
+                <h3>Desserts</h3>
+                <div class="menu-item">
+                    <p>Chocolate Lava Cake</p>
+                    <p>150</p>
+                </div>
+                <div class="menu-item">
+                    <p>Vanilla Ice Cream</p>
+                    <p>120</p>
+                </div>
+                <div class="menu-item">
+                    <p>Gulab Jamun</p>
+                    <p>50</p>
+                </div>
+                <div class="menu-item">
+                    <p>Rasmalai</p>
+                    <p>70</p>
+                </div>
+                <div class="menu-item">
+                    <p>Gajar Halwa</p>
+                    <p>100</p>
+                </div>
+                <div class="menu-item">
+                    <p>Mango Lassi </p>
+                    <p>100</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reservation" id="reservation">
+        <div class="container">
+            <h2>Reserve a Table</h2>
+            <form class="reservation-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your Name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Your Email" required>
+
+                <label for="date">Date</label>
+                <input type="date" id="date" required>
+
+                <label for="message">Special Requests</label>
+                <textarea id="message" rows="5" placeholder="Any special requests?"></textarea>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="container">
+            <h2>Find Us</h2>
+            <p>123, 5th Cross,Banaswadi,Bangalore - 560043,Karnataka, India.</p>
+            <p>Contact:7899265009</p>
+            <p>Email: info@deliciousbites.com</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40158.19906024235!2d77.60941445721416!3d13.000975148420412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1735287702727!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Delicious Bites. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
