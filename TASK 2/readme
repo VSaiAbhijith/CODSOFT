@@ -1,1 +1,37 @@
+# Portfolio Website
 
+## Overview
+This repository contains the source code for my personal portfolio website. It is a responsive web application showcasing my skills, education, projects, and hobbies, along with a contact form to connect with me. Built using HTML5, CSS3, and Font Awesome icons, the website is designed to provide a user-friendly experience.
+
+## Features
+- *Responsive Navigation Bar*: Easy-to-navigate vertical menu.
+- *Home Section*: Introduction with a professional photo.
+- *About Section*: A brief about me and my passion for web development.
+- *Skills Section*: Showcasing technical expertise using a grid layout.
+- *Education Section*: Highlights academic background.
+- *Projects Section*: Displays completed projects with descriptions and links.
+- *Hobbies Section*: A fun insight into my interests.
+- *Contact Section*: Includes email, phone, LinkedIn, GitHub links, and a functional contact form.
+
+## Technologies Used
+- *HTML5*: Markup structure.
+- *CSS3*: Styling and layout design.
+- *Font Awesome*: For icons in the contact section.
+
+## How to View
+To view the portfolio:
+1. Clone the repository:
+   bash
+   git clone https://github.com/VSaiAbhijith/CODSOFT.git
+   
+2. Navigate to the project directory:
+   bash
+   cd portfolio
+   
+3. Open the index.html file in a browser.
+
+## Contact
+- *Email*: vsaiabhijith@gmail.com
+- *Phone*: 7899286009
+- *LinkedIn*: [LinkedIn Profile](https://www.linkedin.com/in/v-sai-abhijith-91326828a)
+- *GitHub*: [GitHub Profile](https://github.com/VSaiAbhijith)
