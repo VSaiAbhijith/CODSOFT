@@ -1,1 +1,20 @@
+# Delicious Bites - Restaurant Landing Page
+
+This repository contains the HTML and CSS code for the "Delicious Bites" restaurant landing page. The page showcases the restaurant's menu, allows users to make reservations, and provides contact information with an embedded Google Map.
+
+## Features
+- **Hero Section:** A welcoming introduction with a call-to-action button to reserve a table.
+- **Menu Section:** Categorized menu items with pricing for Starters, Main Course (Chicken, Mutton, Veg), Breads, and Desserts.
+- **Reservation Form:** A user-friendly form to book tables with fields for name, email, date, and special requests.
+- **Contact Information:** Detailed contact info including address, phone number, email, and an embedded Google Map for location.
+- **Responsive Design:** Designed to look good on various devices, from desktops to mobile phones.
+
+## Structure
+- **HTML:** Provides the structure and content of the page.
+- **CSS:** Handles the styling, including layout, typography, colors, and hover effects.
+
+## Usage
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/VSaiAbhijith/CODSOFT.git
 
