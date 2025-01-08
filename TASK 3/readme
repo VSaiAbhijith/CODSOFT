@@ -1,1 +1,50 @@
+# Calculator Web App
+
+A simple web-based calculator built using HTML, CSS, and JavaScript. This calculator allows you to perform basic arithmetic operations like addition, subtraction, multiplication, and division.
+
+## Features
+
+- Simple and user-friendly interface
+- Perform basic arithmetic operations (+, -, *, /)
+- Clear the input with a 'C' button
+- Handle division by zero error gracefully
+
+## Technologies Used
+
+- **HTML**: Structure of the web page.
+- **CSS**: Styling the user interface.
+- **JavaScript**: Logic and functionality of the calculator.
+
+## How to Use
+
+1. Open the `index.html` file in a web browser.
+2. Click the number buttons (0-9) to enter numbers.
+3. Select an operator (`+`, `-`, `*`, `/`).
+4. Click the `=` button to get the result of the operation.
+5. Use the `C` button to clear the current input.
+
+## Code Overview
+
+### HTML
+
+- The structure of the calculator is built using HTML elements such as `div`, `button`, and `input`.
+- The `input` field is used to display the current input and results.
+- The buttons are used to input numbers and perform operations.
+
+### CSS
+
+- The calculator is styled to be simple and visually appealing.
+- Each button and input field has a defined style, including padding, background color, border radius, and hover effects.
+
+### JavaScript
+
+- Handles the logic behind the calculator's operations.
+- It tracks the current input, stores the first number, and performs operations when an operator is selected.
+- The result is updated dynamically on the screen.
+
+## How to Run Locally
+
+1. Clone this repository to your local machine.
+   ```bash
+   git clone https://github.com/VSaiAbhijith/CODSOFT.git
 
